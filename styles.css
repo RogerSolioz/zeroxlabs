@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #1a1a2e;
+  --secondary-color: #2c3e50;
+  --accent-color: #34495e;
+  --highlight-color: #74b9ff;
+  --text-light: #ecf0f1;
+  --dark-bg: #0d1117;
+}
+
+body {
+  font-family: 'Courier New', 'Monaco', monospace;
+  background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.9)), url('img/zeroxlabs-background.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-light);
+}
+
+/* Logo container */
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Hero logo */
+.hero-logo {
+  height: 120px;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Navbar adjustments for larger logo */
+.navbar {
+  padding: 0.8rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Hero Background */
+#hero {
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(22, 33, 62, 0.7) 100%), url('img/zeroxlabs-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hexagon pattern overlay */
+#hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100" opacity="0.1"><polygon points="50,1 98,25 98,75 50,99 2,75 2,25" stroke="white" fill="none" stroke-width="1"/><pattern id="hex" patternUnits="userSpaceOnUse" width="100" height="86" viewBox="0 0 100 86"><polygon points="50,1 98,25 98,61 50,85 2,61 2,25" stroke="white" fill="none" stroke-width="0.5"/></pattern><rect width="100" height="86" fill="url(%23hex)"/></svg>');
+  opacity: 0.1;
+}
+
+.domain-section {
+  padding: 80px 0;
+}
+
+/* Domain section images */
+.domain-section img {
+  max-height: 300px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.screen-icon {
+  width: 120px;
+  height: 80px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--highlight-color);
+  border-radius: 8px;
+  position: relative;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--highlight-color);
+  box-shadow: 0 2px 8px rgba(116, 185, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.screen-icon:hover {
+  box-shadow: 0 4px 15px rgba(116, 185, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.screen-icon::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--highlight-color);
+  border-radius: 0 0 8px 8px;
+}
+
+.screen-icon::before {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 6px;
+  background-color: var(--highlight-color);
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #fff;
+}
