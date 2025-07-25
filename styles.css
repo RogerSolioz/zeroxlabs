@@ -5,6 +5,8 @@
   --highlight-color: #74b9ff;
   --text-light: #ecf0f1;
   --dark-bg: #0d1117;
+  --retro-green: #00ff41;
+  --retro-green-glow: #00ff4180;
 }
 
 body {
@@ -122,4 +124,59 @@ body {
 footer {
   background: var(--primary-color);
   color: #fff;
+}
+
+/* Retro Terminal Style for 0xLabs title */
+.retro-title {
+  font-family: 'Courier New', 'Lucida Console', 'Monaco', monospace !important;
+  color: var(--retro-green) !important;
+  text-shadow: 
+    0 0 5px var(--retro-green-glow),
+    0 0 10px var(--retro-green-glow),
+    0 0 15px var(--retro-green-glow),
+    0 0 20px var(--retro-green-glow);
+  font-weight: bold !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: relative;
+  animation: terminalFlicker 2s infinite alternate;
+}
+
+/* Subtle flickering animation like old CRT monitors */
+@keyframes terminalFlicker {
+  0% { 
+    opacity: 1;
+    text-shadow: 
+      0 0 5px var(--retro-green-glow),
+      0 0 10px var(--retro-green-glow),
+      0 0 15px var(--retro-green-glow);
+  }
+  98% { 
+    opacity: 1;
+    text-shadow: 
+      0 0 5px var(--retro-green-glow),
+      0 0 10px var(--retro-green-glow),
+      0 0 15px var(--retro-green-glow);
+  }
+  99% { 
+    opacity: 0.98;
+    text-shadow: 
+      0 0 3px var(--retro-green-glow),
+      0 0 8px var(--retro-green-glow);
+  }
+  100% { 
+    opacity: 1;
+    text-shadow: 
+      0 0 5px var(--retro-green-glow),
+      0 0 10px var(--retro-green-glow),
+      0 0 15px var(--retro-green-glow);
+  }
+}
+
+/* Retro style for navbar brand too */
+.navbar-brand.retro-title {
+  font-size: 1.5rem !important;
+  text-shadow: 
+    0 0 3px var(--retro-green-glow),
+    0 0 6px var(--retro-green-glow);
 }
