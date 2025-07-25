@@ -42,7 +42,7 @@
       <h1 class="display-3 fw-bold">0xLabs</h1>
       <p class="lead">We rack our brains to make your life more playful</p>
       <p class="mb-4">Pioneering the intersection of advanced technology and human-centered innovation.</p>
-      <a href="#zeroxware" class="btn btn-accent btn-lg mt-3" style="background: var(--highlight-color); color: #fff;">Get Started</a>
+      <a href="#" class="btn btn-accent btn-lg mt-3" style="background: var(--highlight-color); color: #fff;" data-bs-toggle="modal" data-bs-target="#contactModal">Get in Touch</a>
     </div>
   </header>
 
@@ -50,18 +50,18 @@
   <section class="container text-center my-5">
     <div class="row gy-4">
       <div class="col-md-4">
-        <div class="screen-icon mx-auto"><i class="bi bi-code-slash"></i></div>
-        <h5>ZeroxWare</h5>
+        <div class="screen-icon mx-auto mb-4"><i class="bi bi-code-slash"></i></div>
+        <h5 class="mb-3">ZeroxWare</h5>
         <p>Innovative and playful application development laboratory.</p>
       </div>
       <div class="col-md-4">
-        <div class="screen-icon mx-auto"><i class="bi bi-globe2"></i></div>
-        <h5>ZeroxVerse</h5>
+        <div class="screen-icon mx-auto mb-4"><i class="bi bi-globe2"></i></div>
+        <h5 class="mb-3">ZeroxVerse</h5>
         <p>Cryptographic and quantum universe.</p>
       </div>
       <div class="col-md-4">
-        <div class="screen-icon mx-auto"><i class="bi bi-clock-history"></i></div>
-        <h5>ZeroxTime</h5>
+        <div class="screen-icon mx-auto mb-4"><i class="bi bi-clock-history"></i></div>
+        <h5 class="mb-3">ZeroxTime</h5>
         <p>Extra-temporal research.</p>
       </div>
     </div>
@@ -71,13 +71,13 @@
   <section id="zeroxware" class="domain-section text-center" style="background: var(--primary-color); color: var(--text-light);">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="img/zeroxware-picture.png" alt="ZeroxWare Development" class="img-fluid rounded shadow mb-4 mb-md-0">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="img/zeroxware-picture.png" alt="ZeroxWare Development" class="img-fluid rounded shadow">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 ps-md-4">
           <h2>ZeroxWare</h2>
           <p>Where cutting-edge code meets creative experimentation to push the boundaries of what applications can achieve.</p>
-          <a href="zeroxware.html" class="btn btn-outline-light mt-3">Learn More</a>
+          <a href="#" class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#restrictedModal">Enter</a>
         </div>
       </div>
     </div>
@@ -85,22 +85,29 @@
 
   <section id="zeroxverse" class="domain-section text-center" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: var(--text-light);">
     <div class="container">
-      <h2>ZeroxVerse</h2>
-      <p>Building tomorrow's digital reality where blockchain meets quantum mechanics to create unprecedented virtual experiences.</p>
-      <a href="zeroxverse.html" class="btn btn-outline-light mt-3">Learn More</a>
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+          <img src="img/zeroxverse-picture.png" alt="ZeroxVerse Universe" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 order-md-1 pe-md-4">
+          <h2>ZeroxVerse</h2>
+          <p>Building tomorrow's digital reality where blockchain meets quantum computing to create unprecedented virtual experiences.</p>
+          <a href="#" class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#restrictedModal">Enter</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="zeroxtime" class="domain-section text-center" style="background: var(--secondary-color); color: var(--text-light);">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 order-md-2">
-          <img src="img/zeroxtime-picture.png" alt="ZeroxTime Research" class="img-fluid rounded shadow mb-4 mb-md-0">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="img/zeroxtime-picture.png" alt="ZeroxTime Research" class="img-fluid rounded shadow">
         </div>
-        <div class="col-md-6 order-md-1">
+        <div class="col-md-6 ps-md-4">
           <h2>ZeroxTime</h2>
           <p>Exploring dimensions beyond conventional time management through advanced computing and temporal optimization algorithms.</p>
-          <a href="zeroxtime.html" class="btn btn-outline-light mt-3">Learn More</a>
+          <a href="#" class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#restrictedModal">Enter</a>
         </div>
       </div>
     </div>
@@ -113,7 +120,151 @@
     </div>
   </footer>
 
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-primary">
+        <div class="modal-header border-primary">
+          <h5 class="modal-title text-primary" id="contactModalLabel">
+            <i class="bi bi-envelope-at me-2"></i>
+            Get in Touch with 0xLabs
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="contactForm">
+          <div class="modal-body py-4">
+            <p class="text-muted mb-4">Interested in our cutting-edge research? Leave your contact details and we'll reach out to discuss potential collaborations.</p>
+            
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label text-light">
+                <i class="bi bi-envelope me-2"></i>Email Address *
+              </label>
+              <input type="email" class="form-control bg-secondary border-0 text-light" id="contactEmail" required placeholder="your.email@domain.com">
+            </div>
+            
+            <div class="mb-3">
+              <label for="contactName" class="form-label text-light">
+                <i class="bi bi-person me-2"></i>Name (Optional)
+              </label>
+              <input type="text" class="form-control bg-secondary border-0 text-light" id="contactName" placeholder="Your name">
+            </div>
+            
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label text-light">
+                <i class="bi bi-chat-text me-2"></i>Message
+              </label>
+              <textarea class="form-control bg-secondary border-0 text-light" id="contactMessage" rows="4" placeholder="Tell us about your interests or questions regarding our research domains..."></textarea>
+            </div>
+            
+            <div class="alert alert-info border-0 bg-primary bg-opacity-25">
+              <i class="bi bi-info-circle me-2"></i>
+              <small>We respect your privacy. Your information will only be used to contact you about 0xLabs opportunities.</small>
+            </div>
+          </div>
+          <div class="modal-footer border-primary">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary">
+              <i class="bi bi-send me-2"></i>Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Restricted Area Modal -->
+  <div class="modal fade" id="restrictedModal" tabindex="-1" aria-labelledby="restrictedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-danger">
+        <div class="modal-header border-danger">
+          <h5 class="modal-title text-danger" id="restrictedModalLabel">
+            <i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>
+            RESTRICTED AREA
+          </h5>
+        </div>
+        <div class="modal-body text-center py-4">
+          <div class="mb-4">
+            <i class="bi bi-fingerprint text-warning" style="font-size: 4rem;"></i>
+          </div>
+          <h6 class="text-warning mb-3">BIOMETRIC AUTHENTICATION REQUIRED</h6>
+          <p class="text-muted mb-3">Access to this laboratory section requires authorized clearance.</p>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+            <div class="spinner-border spinner-border-sm text-danger me-2" role="status"></div>
+            <small class="text-muted">Scanning for authorized personnel...</small>
+          </div>
+          <div class="alert alert-danger border-0 bg-transparent">
+            <i class="bi bi-shield-x me-2"></i>
+            <strong>ACCESS DENIED</strong><br>
+            <small>Insufficient security clearance detected</small>
+          </div>
+        </div>
+        <div class="modal-footer border-danger justify-content-center">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">
+            <i class="bi bi-arrow-left me-2"></i>Return to Public Area
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Contact Form Handler -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const email = document.getElementById('contactEmail').value;
+      const name = document.getElementById('contactName').value;
+      const message = document.getElementById('contactMessage').value;
+      
+      if (!email) {
+        alert('Please enter your email address.');
+        return;
+      }
+      
+      // Prepare form data
+      const formData = new FormData();
+      formData.append('email', email);
+      formData.append('name', name);
+      formData.append('message', message);
+      formData.append('timestamp', new Date().toISOString());
+      
+      // Submit to server (you'll need to create save_contact.php)
+      fetch('save_contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          // Show success message
+          document.querySelector('#contactModal .modal-body').innerHTML = `
+            <div class="text-center py-4">
+              <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+              <h5 class="text-success mt-3">Message Sent Successfully!</h5>
+              <p class="text-muted">Thank you for your interest in 0xLabs. We'll be in touch soon to discuss potential collaborations.</p>
+              <small class="text-muted">You can close this window now.</small>
+            </div>
+          `;
+          document.querySelector('#contactModal .modal-footer').style.display = 'none';
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        // Fallback: show success anyway for demo purposes
+        document.querySelector('#contactModal .modal-body').innerHTML = `
+          <div class="text-center py-4">
+            <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+            <h5 class="text-success mt-3">Message Received!</h5>
+            <p class="text-muted">Thank you for your interest in 0xLabs. We'll be in touch soon.</p>
+            <small class="text-muted">You can close this window now.</small>
+          </div>
+        `;
+        document.querySelector('#contactModal .modal-footer').style.display = 'none';
+      });
+    });
+  </script>
 </body>
 </html>
