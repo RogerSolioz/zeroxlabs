@@ -234,20 +234,23 @@ footer {
 
 .dowge-icon {
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .dowge-icon:hover {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.3) rotate(5deg);
 }
 
 .chill-dowge {
   border: 2px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .chill-dowge:hover {
+  transform: scale(1.25);
   border-color: rgba(0, 255, 65, 0.6);
-  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
 }
 
 /* DOWGE Link Styles */
