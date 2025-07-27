@@ -88,9 +88,9 @@ body {
 }
 
 .domain-section img:hover {
-  transform: scale(1.02);
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
 
 /* Responsive image containers */
@@ -233,24 +233,31 @@ footer {
 }
 
 .dowge-icon {
-  transition: transform 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
+  transform-origin: center;
 }
 
 .dowge-icon:hover {
-  transform: scale(1.3) rotate(5deg);
+  transform: scale(1.6) rotate(15deg);
+  filter: brightness(1.2) drop-shadow(0 0 15px rgba(255, 193, 7, 0.8));
 }
 
 .chill-dowge {
   border: 2px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
+  transform-origin: center;
 }
 
 .chill-dowge:hover {
-  transform: scale(1.25);
-  border-color: rgba(0, 255, 65, 0.6);
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+  transform: scale(1.5) rotate(-10deg);
+  border-color: rgba(0, 255, 65, 0.8);
+  box-shadow: 
+    0 0 30px rgba(0, 255, 65, 0.7),
+    0 0 60px rgba(0, 255, 65, 0.4),
+    0 0 90px rgba(0, 255, 65, 0.2);
+  filter: brightness(1.3) saturate(1.2);
 }
 
 /* DOWGE Link Styles */
