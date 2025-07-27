@@ -180,3 +180,35 @@ footer {
     0 0 3px var(--retro-green-glow),
     0 0 6px var(--retro-green-glow);
 }
+
+/* DOWGE Support Section Styles */
+.dowge-support {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.dowge-support:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.dowge-icon {
+  transition: transform 0.3s ease;
+}
+
+.dowge-icon:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.chill-dowge {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.chill-dowge:hover {
+  border-color: rgba(0, 255, 65, 0.6);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
