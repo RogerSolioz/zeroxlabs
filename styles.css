@@ -22,6 +22,7 @@ body {
 .logo {
   height: 60px;
   width: auto;
+  border-radius: 15px;
 }
 
 /* Hero logo */
@@ -30,6 +31,7 @@ body {
   width: auto;
   filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5));
   transition: transform 0.3s ease;
+  border-radius: 25px;
 }
 
 .hero-logo:hover {
