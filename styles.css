@@ -288,3 +288,25 @@ footer {
 .dowge-link:hover::after {
   width: 100%;
 }
+
+/* LotoBooster Link Styles */
+.lotobooster-link {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.lotobooster-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.lotobooster-link:hover .bi-suit-club-fill {
+  transform: scale(1.2) rotate(10deg);
+  color: #40e869 !important;
+}
+
+.lotobooster-link:hover strong {
+  color: #40e869 !important;
+}
