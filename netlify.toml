@@ -17,6 +17,24 @@
 
 # Redirects
 [[redirects]]
+  from = "https://zeroxlabs.netlify.app/*"
+  to = "https://zeroxlabs.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://zeroxlabs.com/*"
+  to = "https://zeroxlabs.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.zeroxlabs.com/*"
+  to = "https://zeroxlabs.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/contact-success"
   to = "/thank-you.html"
   status = 200

@@ -1,0 +1,9 @@
+# Redirect from Netlify subdomain to custom domain
+https://zeroxlabs.netlify.app/* https://zeroxlabs.com/:splat 301!
+
+# Force HTTPS on custom domain
+http://zeroxlabs.com/* https://zeroxlabs.com/:splat 301!
+
+# Handle www subdomain (if applicable)
+https://www.zeroxlabs.com/* https://zeroxlabs.com/:splat 301!
+http://www.zeroxlabs.com/* https://zeroxlabs.com/:splat 301!
