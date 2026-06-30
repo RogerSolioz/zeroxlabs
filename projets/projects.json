@@ -1,0 +1,161 @@
+{
+  "_instructions": "Source unique des projets de la vitrine 0xLabs. Remplace toutes les valeurs commençant par 'TODO'. Champs : category (App web | App mobile iOS | Jeu / Expérience web | Outil), status (En ligne | Bêta | Bientôt), accent (code hex), tagline (1 phrase), description (2-3 phrases), features (3 à 6 puces), tech (optionnel), screenshot (chemin relatif depuis la racine, ex: import/xxx.webp, ou null pour un placeholder). Les pages HTML statiques sont ensuite générées à partir de ce fichier.",
+  "_excluded": [
+    { "netlifySite": "zeroxlabs", "raison": "La vitrine elle-même" },
+    { "netlifySite": "katiart", "url": "https://katiart.netlify.app", "raison": "Exclu pour l'instant (pas de domaine perso)" }
+  ],
+  "projects": [
+    {
+      "slug": "lotobooster",
+      "name": "LotoBooster",
+      "url": "https://lotobooster.com",
+      "netlifySite": "lotobooster",
+      "page": "projets/lotobooster.html",
+      "category": "App web",
+      "status": "En ligne",
+      "accent": "#2ec27e",
+      "tagline": "Comparez les billets à gratter et maximisez vos chances grâce à l'analyse statistique.",
+      "description": "Les joueurs choisissent souvent leurs tickets à l'aveugle. LotoBooster réunit toutes les données au même endroit — chances de gain, prix, lots restants et dates limites de réclamation — pour décider sur des faits plutôt qu'au hasard.",
+      "features": [
+        "Catalogue complet de tous les billets à gratter",
+        "Comparaison des chances de gain entre jeux",
+        "Jeux variés : Super billet, Duel, Podium",
+        "Mises à jour régulières des données",
+        "Billets échus et dates limites de réclamation",
+        "Moteur d'analyse statistique sur mesure"
+      ],
+      "tech": ["HTML5 / CSS3", "JavaScript", "Moteur de probabilités", "Mobile-first"],
+      "screenshot": "import/lotobooster.webp",
+      "responsibleGamblingNotice": true,
+      "featured": true,
+      "done": true
+    },
+    {
+      "slug": "chillcards",
+      "name": "ChillCards",
+      "url": "https://chillcards.com",
+      "netlifySite": "chillcards",
+      "page": "projets/chillcards.html",
+      "category": "App mobile iOS",
+      "status": "Bêta",
+      "accent": "#22b8cf",
+      "tagline": "La magie des cartes postales à l'ère numérique.",
+      "description": "ChillCards combine l'émotion authentique des cartes postales avec les facilités modernes : on choisit une photo, on appose un timbre Dolce Posta unique, et on envoie avec un délai d'acheminement qui redonne le plaisir de l'attente.",
+      "features": [
+        "Cartes postales personnalisées avec vos photos",
+        "Timbres Dolce Posta en séries limitées",
+        "Trajet animé sur une carte interactive du monde",
+        "Album numérique pour collectionner les cartes reçues",
+        "Carnet d'adresses intégré",
+        "Simulation du délai d'acheminement postal"
+      ],
+      "tech": ["iOS", "React / Next.js", "Cartes interactives", "Design UX", "Intégration email"],
+      "screenshot": "import/chillcards.webp",
+      "cta": "Rejoindre la bêta iOS",
+      "featured": true,
+      "done": false
+    },
+    {
+      "slug": "yearloop",
+      "name": "Yearloop",
+      "url": "https://yearloop.com",
+      "netlifySite": "yearloop",
+      "page": "projets/yearloop.html",
+      "category": "App mobile iOS",
+      "status": "Bientôt",
+      "accent": "#f0a020",
+      "tagline": "N'oubliez plus aucun anniversaire ni événement marquant.",
+      "description": "Yearloop garde tous vos événements importants de l'année au même endroit, en un coup d'œil. Ultra simple : visualisez le prochain événement et dans combien de jours. Anniversaires, mariages, diplômes… tout y est.",
+      "features": [
+        "Interface intuitive ultra simple",
+        "Vue d'ensemble de tous vos événements annuels",
+        "100 % privé — données stockées localement",
+        "Sans limites d'événements",
+        "Import / export pour sauvegarder vos données",
+        "Tous types d'événements supportés"
+      ],
+      "tech": ["iOS", "Stockage local", "Interface minimaliste", "Respect de la vie privée"],
+      "screenshot": "import/yearloop.webp",
+      "featured": true,
+      "done": false
+    },
+    {
+      "slug": "the-age-of-bryan",
+      "name": "The Age of Bryan",
+      "url": "https://theageofbryan.com",
+      "netlifySite": "theageofbryan",
+      "page": "projets/the-age-of-bryan.html",
+      "category": "Jeu / Expérience web",
+      "status": "En ligne",
+      "accent": "#f59f00",
+      "tagline": "Une expérience Euromillions ludique qui révèle les vraies probabilités.",
+      "description": "The Age of Bryan immerge l'utilisateur dans la frénésie du jeu Euromillions tout en mettant en lumière les probabilités réelles, à travers des animations de tirages et un système de badges.",
+      "features": [
+        "Animations des tirages",
+        "Système de badges",
+        "Prise de conscience des probabilités réelles",
+        "Analyse probabilistique"
+      ],
+      "tech": ["Développement web", "JavaScript", "Design moderne", "UX/UI"],
+      "screenshot": "import/theageofbryan.webp",
+      "responsibleGamblingNotice": true,
+      "featured": true,
+      "done": false
+    },
+    {
+      "slug": "quiadit",
+      "name": "Quiadit",
+      "url": "https://quiadit.com",
+      "netlifySite": "quiadit",
+      "page": "projets/quiadit.html",
+      "category": "TODO (App web | App mobile iOS | Jeu / Expérience web | Outil)",
+      "status": "TODO (En ligne | Bêta | Bientôt)",
+      "accent": "TODO (ex: #845ef7)",
+      "tagline": "TODO : une phrase d'accroche",
+      "description": "TODO : 2-3 phrases décrivant le produit (problème résolu + solution)",
+      "features": ["TODO fonctionnalité 1", "TODO fonctionnalité 2", "TODO fonctionnalité 3"],
+      "tech": ["TODO (optionnel)"],
+      "screenshot": null,
+      "featured": true,
+      "done": false
+    },
+    {
+      "slug": "bookatomy",
+      "name": "Bookatomy",
+      "url": "https://bookatomy.com",
+      "netlifySite": "bookatomy",
+      "page": "projets/bookatomy.html",
+      "category": "TODO (App web | App mobile iOS | Jeu / Expérience web | Outil)",
+      "status": "TODO (En ligne | Bêta | Bientôt)",
+      "accent": "TODO (ex: #4263eb)",
+      "tagline": "TODO : une phrase d'accroche",
+      "description": "TODO : 2-3 phrases décrivant Bookatomy (le produit principal de la famille)",
+      "features": ["TODO fonctionnalité 1", "TODO fonctionnalité 2", "TODO fonctionnalité 3"],
+      "tech": ["TODO (optionnel)"],
+      "screenshot": null,
+      "isFamily": true,
+      "components": [
+        {
+          "name": "Application Bookatomy",
+          "url": "https://app.bookatomy.com",
+          "netlifySite": "bookatomyapp",
+          "role": "TODO : à quoi sert ce sous-site (ex: l'application principale)"
+        },
+        {
+          "name": "Lexatomy",
+          "url": "https://lexatomy.bookatomy.com",
+          "netlifySite": "lexatomy",
+          "role": "TODO : à quoi sert ce sous-site"
+        },
+        {
+          "name": "Bookatomy — Domaine public",
+          "url": "https://pubdom.bookatomy.com",
+          "netlifySite": "bookatomypubdom",
+          "role": "TODO : à quoi sert ce sous-site (ex: catalogue d'œuvres du domaine public)"
+        }
+      ],
+      "featured": true,
+      "done": false
+    }
+  ]
+}
