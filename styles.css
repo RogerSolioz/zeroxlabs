@@ -601,6 +601,43 @@ p, .lead {
   font-size: 0.9rem;
 }
 
+/* Placeholder d'aperçu (capture non encore fournie) */
+.device-placeholder {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.device-placeholder .placeholder-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--project-accent);
+  opacity: 0.8;
+}
+
+.device-placeholder .placeholder-inner i {
+  font-size: 2.5rem;
+}
+
+/* Fil d'Ariane sur fond sombre */
+.project-page .breadcrumb,
+.breadcrumb {
+  --bs-breadcrumb-divider-color: rgba(236, 240, 241, 0.4);
+}
+
+.project-page .breadcrumb-item a,
+.breadcrumb-item a {
+  color: var(--highlight-color);
+}
+
+.project-page .breadcrumb-item.active,
+.breadcrumb-item.active {
+  color: rgba(236, 240, 241, 0.6);
+}
+
 /* CTA final projet */
 .project-cta {
   text-align: center;
