@@ -430,3 +430,41 @@ p, .lead {
 .cta-section .section-subtitle {
   color: rgba(236, 240, 241, 0.85);
 }
+
+/* ===== Pages légales (mentions légales, confidentialité) ===== */
+.legal-page {
+  background: var(--dark-bg);
+  min-height: 70vh;
+}
+
+.legal-page .container {
+  max-width: 820px;
+}
+
+.legal-page h1 {
+  color: var(--text-light);
+}
+
+.legal-section {
+  margin-bottom: 2rem;
+}
+
+.legal-section h2 {
+  font-size: 1.3rem;
+  color: var(--highlight-color);
+  margin-bottom: 0.75rem;
+}
+
+.legal-section p,
+.legal-section li {
+  color: rgba(236, 240, 241, 0.85);
+}
+
+.legal-section a {
+  color: var(--highlight-color);
+}
+
+.legal-section em {
+  color: #ffd479;
+  font-style: normal;
+}
