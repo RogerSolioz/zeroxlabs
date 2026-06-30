@@ -312,3 +312,121 @@ footer {
 .lotobooster-link:hover strong {
   color: #40e869 !important;
 }
+
+/* ===== Refonte pro : typographie lisible pour le corps de texte ===== */
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* On conserve le style terminal uniquement pour la marque/le logo */
+.retro-title {
+  font-family: 'Courier New', 'Lucida Console', 'Monaco', monospace !important;
+}
+
+p, .lead {
+  line-height: 1.7;
+}
+
+/* Bouton d'accent réutilisable */
+.btn-accent {
+  background: var(--highlight-color);
+  color: #0d1117;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background: #5aa3f0;
+  color: #0d1117;
+}
+
+/* Sous-titres de section et hero */
+.hero-subtitle {
+  max-width: 680px;
+  font-size: 1.1rem;
+  opacity: 0.92;
+}
+
+.section-subtitle {
+  max-width: 640px;
+  font-size: 1.05rem;
+  color: rgba(236, 240, 241, 0.75);
+}
+
+/* Bandeau de statistiques */
+.stats-band {
+  background: var(--primary-color);
+  color: var(--text-light);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stat-number {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--highlight-color);
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+}
+
+/* Section expertise : fond dédié (évite la photo de parallaxe chargée derrière le texte) */
+#expertise {
+  background: var(--dark-bg);
+}
+
+/* Cartes d'expertise */
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
+  color: var(--text-light);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(116, 185, 255, 0.4);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.feature-icon {
+  font-size: 2.4rem;
+  color: var(--highlight-color);
+}
+
+/* Cartes projets (réalisations) */
+.project-card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.project-thumb {
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+  background: #0d1117;
+}
+
+/* Section d'appel à l'action finale */
+.cta-section {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+  color: var(--text-light);
+}
+
+.cta-section .section-subtitle {
+  color: rgba(236, 240, 241, 0.85);
+}
