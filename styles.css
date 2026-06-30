@@ -431,6 +431,185 @@ p, .lead {
   color: rgba(236, 240, 241, 0.85);
 }
 
+/* ===== Pages projet (vitrines individuelles) ===== */
+.project-page {
+  --project-accent: var(--highlight-color);
+  --project-accent-soft: rgba(116, 185, 255, 0.15);
+}
+
+/* Hero projet */
+.project-hero {
+  position: relative;
+  padding: 110px 0 90px;
+  text-align: center;
+  color: #fff;
+  background:
+    radial-gradient(1200px 500px at 50% -10%, var(--project-accent-soft), transparent 70%),
+    linear-gradient(135deg, rgba(13, 17, 23, 0.92) 0%, rgba(26, 26, 46, 0.92) 100%),
+    url('img/zeroxlabs-background.webp');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.project-hero .project-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  color: var(--project-accent);
+  margin-bottom: 0.75rem;
+}
+
+.project-hero h1 {
+  font-weight: 800;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+}
+
+.project-hero .project-tagline {
+  max-width: 640px;
+  margin: 0.5rem auto 1.5rem;
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--project-accent-soft);
+  color: var(--project-accent);
+  border: 1px solid var(--project-accent);
+}
+
+.status-badge .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--project-accent);
+  box-shadow: 0 0 0 0 var(--project-accent);
+  animation: statusPulse 2s infinite;
+}
+
+@keyframes statusPulse {
+  0% { box-shadow: 0 0 0 0 var(--project-accent-soft); }
+  70% { box-shadow: 0 0 0 8px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* Bouton accent dynamique par projet */
+.btn-project {
+  background: var(--project-accent);
+  color: #0d1117;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-project:hover,
+.btn-project:focus {
+  filter: brightness(1.08);
+  color: #0d1117;
+}
+
+.btn-project-outline {
+  border: 1px solid var(--project-accent);
+  color: var(--project-accent);
+  background: transparent;
+  font-weight: 600;
+}
+
+.btn-project-outline:hover,
+.btn-project-outline:focus {
+  background: var(--project-accent-soft);
+  color: var(--project-accent);
+}
+
+/* Sections de page projet (alternance de deux tons sombres pleins) */
+.project-section {
+  padding: 70px 0;
+  background: var(--dark-bg);
+}
+
+.project-section.alt {
+  background: var(--primary-color);
+}
+
+.project-lead {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: rgba(236, 240, 241, 0.88);
+}
+
+/* Carte fonctionnalité projet */
+.project-feature {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.6rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.project-feature:hover {
+  transform: translateY(-4px);
+  border-color: var(--project-accent);
+}
+
+.project-feature .pf-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--project-accent-soft);
+  color: var(--project-accent);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Cadre "device" pour les captures */
+.device-frame {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 12px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.device-frame img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Chips stack technique */
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* CTA final projet */
+.project-cta {
+  text-align: center;
+  padding: 80px 0;
+  background:
+    radial-gradient(900px 400px at 50% 120%, var(--project-accent-soft), transparent 70%),
+    var(--dark-bg);
+}
+
 /* ===== Pages légales (mentions légales, confidentialité) ===== */
 .legal-page {
   background: var(--dark-bg);
