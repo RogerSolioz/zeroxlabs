@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Courier New', 'Monaco', monospace;
-  background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.9)), url('img/zeroxlabs-background.png');
+  background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.9)), url('img/zeroxlabs-background.webp');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -50,7 +50,7 @@ body {
 
 /* Hero Background */
 #hero {
-  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(22, 33, 62, 0.7) 100%), url('img/zeroxlabs-background.png');
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(22, 33, 62, 0.7) 100%), url('img/zeroxlabs-background.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
