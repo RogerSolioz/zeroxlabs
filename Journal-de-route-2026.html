@@ -1,3 +1,4 @@
+<!doctype html>
 <meta charset="utf-8">
 <title>Journal de route — Roadtrip moto 2026</title>
 <style>
@@ -92,6 +93,15 @@ ul.check li:before { content: ""; position: absolute; left: 0; top: 1.6mm;
 .tight h3 { margin: 3.2mm 0 1.6mm; }
 .tight .tip { font-size: 8.5pt; padding: 2mm 3mm; }
 .tight .dayhead { margin-bottom: 3mm; }
+
+/* a l'ecran : on simule les pages A4 pour retrouver la mise en page du PDF */
+@media screen {
+  html { background: #d7dade; }
+  body { background: transparent; }
+  .page { width: 210mm; height: 295mm; padding: 15mm 16mm 14mm;
+          margin: 8mm auto; background: #fff;
+          box-shadow: 0 1px 8px rgba(0,0,0,.28); }
+}
 </style>
 <section class="page cover">
   <div class="kicker">Journal de route</div>
